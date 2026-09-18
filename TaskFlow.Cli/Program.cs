@@ -1,9 +1,7 @@
 ﻿using TaskFlow.Cli.Models;
 
-var task = new TaskItem("Learn Git");
-
-Console.WriteLine(task.Title);
-
+var task = new TaskItem(1, "Learn Git");
+Console.WriteLine($"{task.Id}. {task.Title}");
 Console.WriteLine();
 Console.WriteLine("=== TASKFLOW ===");
 Console.WriteLine();

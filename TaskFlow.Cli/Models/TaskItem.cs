@@ -1,11 +1,12 @@
-namespace TaskFlow.Cli.Models;
-
 public class TaskItem
 {
+    public int Id { get; set; }
+
     public string Title { get; set; }
 
-    public TaskItem(string title)
+    public TaskItem(int id, string title)
     {
+        Id = id;
         Title = title;
     }
 }
