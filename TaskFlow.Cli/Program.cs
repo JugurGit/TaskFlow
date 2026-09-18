@@ -1,3 +1,9 @@
 ﻿Console.WriteLine("=== TASKFLOW ===");
 Console.WriteLine();
-Console.WriteLine("Your personal task manager.");
+
+Console.WriteLine("1. Add task");
+Console.WriteLine("2. List tasks");
+Console.WriteLine("3. Exit");
+
+Console.WriteLine();
+Console.Write("Choose an option: ");
