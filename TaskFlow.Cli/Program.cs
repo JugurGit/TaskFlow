@@ -1,5 +1,4 @@
-﻿using TaskFlow.Cli.Models;
-
+﻿
 var task = new TaskItem(1, "Learn Git");
 Console.WriteLine($"{task.Id}. {task.Title}");
 Console.WriteLine();
