@@ -1,18 +1,18 @@
 ﻿using TaskFlow.Cli.Models;
 
-var task = new TaskItem(1, "Learn Git");
+var task = new TaskItem(1, "Learn Git", "High");
 
 Console.WriteLine(
-    $"{(task.IsCompleted ? "[X]" : "[ ]")} {task.Id}. {task.Title}"
+    $"{(task.IsCompleted ? "[X]" : "[ ]")} {task.Id}. {task.Title} (Priority: {task.Priority})"
 );
 
 task.Complete();
 
 Console.WriteLine(
-    $"{(task.IsCompleted ? "[X]" : "[ ]")} {task.Id}. {task.Title}"
+    $"{(task.IsCompleted ? "[X]" : "[ ]")} {task.Id}. {task.Title} (Priority: {task.Priority})"
 );
 
-Console.WriteLine($"{task.Id}. {task.Title}");
+Console.WriteLine($"{task.Id}. {task.Title} (Priority: {task.Priority})");
 Console.WriteLine();
 Console.WriteLine("=== TASKFLOW ===");
 Console.WriteLine();

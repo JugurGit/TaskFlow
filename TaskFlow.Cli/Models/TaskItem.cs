@@ -8,12 +8,15 @@ public class TaskItem
 
     public bool IsCompleted { get; set; }
 
-    public TaskItem(int id, string title)
-    {
-        Id = id;
-        Title = title;
-        IsCompleted = false;
-    }
+    public string Priority { get; set; }
+
+    public TaskItem(int id, string title, string priority)
+{
+    Id = id;
+    Title = title;
+    Priority = priority;
+    IsCompleted = false;
+}
 
     public void Complete()
     {
