@@ -14,4 +14,9 @@ public class TaskItem
         Title = title;
         IsCompleted = false;
     }
+
+    public void Complete()
+    {
+        IsCompleted = true;
+    }
 }

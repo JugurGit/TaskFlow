@@ -1,5 +1,17 @@
-﻿
+﻿using TaskFlow.Cli.Models;
+
 var task = new TaskItem(1, "Learn Git");
+
+Console.WriteLine(
+    $"{(task.IsCompleted ? "[X]" : "[ ]")} {task.Id}. {task.Title}"
+);
+
+task.Complete();
+
+Console.WriteLine(
+    $"{(task.IsCompleted ? "[X]" : "[ ]")} {task.Id}. {task.Title}"
+);
+
 Console.WriteLine($"{task.Id}. {task.Title}");
 Console.WriteLine();
 Console.WriteLine("=== TASKFLOW ===");
