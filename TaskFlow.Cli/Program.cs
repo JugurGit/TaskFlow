@@ -10,8 +10,8 @@ while (running)
     Console.WriteLine("=== TASKFLOW ===");
     Console.WriteLine();
 
-    Console.WriteLine("1. Add task");
-    Console.WriteLine("2. List tasks");
+    Console.WriteLine("1. Add a task");
+    Console.WriteLine("2. View tasks");
     Console.WriteLine("3. Exit");
 
     Console.WriteLine();
