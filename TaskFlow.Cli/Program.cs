@@ -8,6 +8,7 @@ while (running)
 {
     Console.WriteLine();
     Console.WriteLine("=== TASKFLOW ===");
+    Console.WriteLine("debug mode enabled");
     Console.WriteLine();
 
     Console.WriteLine("1. Add task");
