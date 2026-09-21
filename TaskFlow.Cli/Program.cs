@@ -56,12 +56,19 @@ while (running)
                 break;
             }
 
+            string normalizedPriority =
+            validPriorities.First(p =>
+                p.Equals(
+                    priority,
+                    StringComparison.OrdinalIgnoreCase
+                )
+            );
             int id = tasks.Count + 1;
 
             var task = new TaskItem(
                 id,
                 title,
-                priority
+                normalizedPriority
             );
 
             tasks.Add(task);
